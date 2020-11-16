@@ -24,9 +24,24 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/assets/vendor/aos/aos.css",
+              "src/assets/vendor/boxicons/css/boxicons.min.css",
+              "src/assets/vendor/icofont/icofont.min.css",
+              "src/assets/vendor/owl.carousel/assets/owl.carousel.min.css",
+              "src/assets/vendor/remixicon/remixicon.css",
+              "src/assets/vendor/venobox/venobox.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/vendor/jquery/jquery.min.js",
+              "src/assets/vendor/jquery.easing/jquery.easing.min.js",
+              "src/assets/vendor/waypoints/jquery.waypoints.min.js",
+              "src/assets/vendor/aos/aos.js",
+              "src/assets/vendor/counterup/counterup.min.js",
+              "src/assets/vendor/owl.carousel/owl.carousel.min.js",
+              "src/assets/vendor/venobox/venobox.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -52,8 +67,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "6kb",
-                  "maximumError": "10kb"
+                  "maximumWarning": "60kb",
+                  "maximumError": "100kb"
                 }
               ]
             }
@@ -117,8 +132,13 @@
               "devServerTarget": "Smartudy:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "Smartudy"
 }
