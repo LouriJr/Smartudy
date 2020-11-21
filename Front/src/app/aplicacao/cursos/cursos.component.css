@@ -1,0 +1,69 @@
+#divnav{
+    background-color: #202040;
+}
+
+.hero-waves{
+    margin-top: -2em !important;
+}
+
+.curso{
+    margin-bottom: 3em;
+}
+
+#header {
+    height: 80px;
+    transition: all 0.5s;
+    z-index: 9 !important;;
+    transition: all 0.5s;
+    background: #202040 !important;
+    margin-bottom: 100px !important;
+  }
+
+ #hero{
+    background: #202040 !important;
+ } 
+
+.name{
+    margin-bottom: -100px !important;
+}  
+
+.section-title-curso {
+    padding-bottom: 40px;
+  }
+  
+  .section-title-curso h2 {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0;
+    line-height: 1px;
+    margin: 0 0 5px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    font-family: "Poppins", sans-serif;
+
+    
+  }
+  
+  .section-title-curso h2::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #1acc8d;
+    margin: 4px 10px;
+  }
+  
+  .section-title-curso p {
+    /* font-size: 25px; */
+    margin-bottom: 1em;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #202040;
+  }
+
+  .top{
+      margin-top: -2em;
+  }
