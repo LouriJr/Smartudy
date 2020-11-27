@@ -9,11 +9,40 @@
       </h1>
     </div>
   </div>
+
+
 </header>
 <!-- End Header -->
 
 <!-- ======= Hero Section ======= -->
 <section id="hero">
+  <div id="main-container" class="container">
+    <div class="row">
+      <div
+        class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center"
+      >
+        <div id="main-text" class="textmain" data-aos="zoom-out">
+          <h1><span>{{curso.Titulo}}</span></h1>
+          <h2>Tudo o que você precisa para iniciar no mundo da programação</h2>
+          <div class="text-center text-lg-left">
+            <a href="/chat" class="btn-get-started scrollto">Começar</a>
+          </div>
+        </div>
+      </div>
+      <div
+        id="illustration"
+        class="col-lg-5 order-1 order-lg-2 hero-img"
+        data-aos="zoom-out"
+        data-aos-delay="300"
+      >
+        <img
+          src="{{curso.Ilustracao}}"
+          class="img-fluid animated"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
   <svg
     class="hero-waves"
     xmlns="http://www.w3.org/2000/svg"
@@ -38,91 +67,42 @@
     </g>
   </svg>
 </section>
-
-
-<footer id="footer">
-  <div class="footer-top">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-6">
-          <div class="footer-info">
-            <h3>Smartudy</h3>
-            <!-- <p class="pb-3">
-                <em
-                  >Qui repudiandae et eum dolores alias sed ea. Qui suscipit
-                  veniam excepturi quod.</em
-                >
-              </p> -->
-            <!-- <p>
-                Avenida Paulista, 2000 <br />
-                São Paulo - SP<br /><br />
-                <strong>Email:</strong> contato@Smartudy.com<br />
-              </p> -->
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            </div>
-          </div>
+<section id="counts" class="counts">
+  <div class="container">
+    <div class="row" data-aos="fade-up">
+      <div class="col-lg-3 col-md-6">
+        <div class="count-box">
+          <i class="icofont-simple-smile"></i>
+          <span class="counter-up">{{curso.CargaHoraria}}</span><span>h</span>
+          <p>Carga Horária</p>
         </div>
+      </div>
 
-        <div class="col-lg-2 col-md-6 footer-links">
-          <h4>Lorem ipsum</h4>
-          <ul>
-            <li>
-              <i class="bx bx-chevron-right"></i> <a href="#">Lorem ipsum</a>
-            </li>
-            <li>
-              <i class="bx bx-chevron-right"></i> <a href="#">Lorem ipsum</a>
-            </li>
-            <li>
-              <i class="bx bx-chevron-right"></i> <a href="#">Lorem ipsum</a>
-            </li>
-          </ul>
+      <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+        <div class="count-box">
+          <i class="icofont-document-folder"></i>
+          <span class="counter-up">{{curso.Progresso}}</span><span>h</span>
+          <p>Progresso</p>
         </div>
+      </div>
 
-        <div class="col-lg-2 col-md-6 footer-links">
-          <h4>Lorem ipsum</h4>
-          <ul>
-            <li>
-              <i class="bx bx-chevron-right"></i> <a href="#">Lorem ipsum</a>
-            </li>
-            <li>
-              <i class="bx bx-chevron-right"></i>
-              <a href="#">Lorem ipsum</a>
-            </li>
-            <li>
-              <i class="bx bx-chevron-right"></i>
-              <a href="#">Lorem ipsum</a>
-            </li>
-          </ul>
+      <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+        <div class="count-box">
+          <i class="icofont-live-support"></i>
+          <span class="counter-up">{{curso.Alunos}}</span>
+          <p>Alunos(As)</p>
         </div>
+      </div>
 
-        <div class="col-lg-4 col-md-6 footer-newsletter">
-          <h4>Lorem ipsum</h4>
-          <p>
-            Tamen quem nulla quae legam multos aute sint culpa legam noster
-            magna
-          </p>
-          <form action="" method="post">
-            <input type="email" name="email" /><input
-              type="submit"
-              value="Subscribe"
-            />
-          </form>
+      <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+        <div class="count-box">
+          <i class="icofont-users-alt-5"></i>
+          <span class="counter-up">{{curso.Avaliacao}}</span>
+          <p>Avaliação</p>
         </div>
       </div>
     </div>
   </div>
-  <div id="divfooter" class="container">
-    <div class="copyright">
-      &copy; Copyright <strong><span>Smartudy</span></strong
-      >. Todos os direitos reservados
-    </div>
-  </div>
-</footer>
-
+</section>
 <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 <div id="preloader"></div>
