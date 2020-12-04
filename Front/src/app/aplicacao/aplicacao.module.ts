@@ -6,9 +6,10 @@ import { CursoComponent } from './curso/curso.component';
 import { ChatComponent } from './chat/chat.component';
 import { MsgUserComponent } from './msg-user/msg-user.component';
 import { MsgBotComponent } from './msg-bot/msg-bot.component';
+import { ResponseSelectorComponent } from './response-selector/response-selector.component';
 
 @NgModule({
-  declarations: [LoginComponent, CursosComponent, CursoComponent, ChatComponent, MsgUserComponent, MsgBotComponent],
+  declarations: [LoginComponent, CursosComponent, CursoComponent, ChatComponent, MsgUserComponent, MsgBotComponent, ResponseSelectorComponent],
   imports: [
     CommonModule,
   ],

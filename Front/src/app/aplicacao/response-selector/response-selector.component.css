@@ -1,0 +1,33 @@
+.response {
+  margin: 0.5em;
+  padding: 0.5em;
+  border: 1px solid white;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.response:hover {
+  background-color: #202040;
+}
+
+.message {
+  background-color: #3e3e60;
+}
+.message p {
+  
+  color: #fff !important;
+}
+
+.small {
+  margin-top: 1em;
+  margin-bottom: -0.2em;
+}
+
+.text-small{
+  margin: 1em;
+}
+
+.media {
+  width: fit-content !important;
+}

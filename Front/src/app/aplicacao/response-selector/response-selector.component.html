@@ -1,0 +1,12 @@
+<div class="media w-50 ml-auto mb-3">
+  <div class="media-body">
+    <div class="message rounded py-2 px-3 mb-2" >
+      <div class="response" *ngFor="let resposta of respostas">
+        <a class="text-small mb-0 text-white" (click)="responder(resposta)">
+          {{resposta.texto_resposta}}
+        </a>
+      </div>
+      <p class="small text-muted">{{data}}</p>
+    </div>
+  </div>
+</div>

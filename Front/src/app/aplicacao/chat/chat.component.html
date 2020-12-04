@@ -6,7 +6,7 @@
     <div class="container d-flex align-items-center" id="divnav">
       <div class="logo mr-auto">
         <h1 class="text-light">
-          <a href="index.html"><span>Smartudy</span></a>
+          <a href="index.html"><span>Smartudy.</span></a>
         </h1>
       </div>
     </div>
@@ -15,59 +15,27 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero">
-    <!-- <svg
-      class="hero-waves"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      viewBox="0 24 150 28 "
-      preserveAspectRatio="none"
-    >
-      <defs>
-        <path
-          id="wave-path"
-          d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
-        />
-      </defs>
-      <g class="wave1">
-        <use
-          xlink:href="#wave-path"
-          x="50"
-          y="3"
-          fill="rgba(255,255,255, .1)"
-        />
-      </g>
-      <g class="wave2">
-        <use
-          xlink:href="#wave-path"
-          x="50"
-          y="0"
-          fill="rgba(255,255,255, .2)"
-        />
-      </g>
-      <g class="wave3">
-        <use xlink:href="#wave-path" x="50" y="9" fill="#fff" />
-      </g>
-    </svg> -->
   </section>
 </div>
 <div id="main-div">
-    <div class="row rounded-lg overflow-hidden shadow">
-        <div id="titulo-curso" class="section-title-curso bg-gray py-2 bg-light shadow">
-            <p class="h5 mb-0 py-1">Lógica de programação</p>
-          </div>
-    </div>
   <div class="row rounded-lg overflow-hidden shadow">
     <!-- Users box-->
     <div class="col-3 px-0">
-      <div class="bg-white">
-        <div class="bg-gray px-4 py-2 bg-light">
-          <p class="h5 mb-0 py-1">Meus cursos</p>
+
+        <div class="row overflow-hidden">
+          <div
+            id="titulo-curso"
+            class="section-title-curso bg-gray py-2 bg-light"
+          >
+            <p class="h5 mb-0 py-1">Meus cursos</p>
+          </div>
         </div>
 
         <div class="messages-box">
           <div class="list-group rounded-0">
             <a
               class="list-group-item list-group-item-action active text-white rounded-0"
+              (click)="removerResponseSelector()"
             >
               <div class="media">
                 <img
@@ -81,11 +49,10 @@
                     class="d-flex align-items-center justify-content-between mb-1"
                   >
                     <h6 class="mb-0">Lógica de programação</h6>
-                    <small class="small font-weight-bold">25 Dec</small>
+                    <small class="small font-weight-bold">Hoje</small>
                   </div>
                   <p class="font-italic mb-0 text-small">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore.
+                      {{mensagemAtual}}
                   </p>
                 </div>
               </div>
@@ -106,12 +73,11 @@
                   <div
                     class="d-flex align-items-center justify-content-between mb-1"
                   >
-                    <h6 class="mb-0">Jason Doe</h6>
-                    <small class="small font-weight-bold">14 Dec</small>
+                    <h6 class="mb-0">Educação Financeira</h6>
+                    <small class="small font-weight-bold">26 Nov</small>
                   </div>
                   <p class="font-italic text-muted mb-0 text-small">
-                    Lorem ipsum dolor sit amet, consectetur. incididunt ut
-                    labore.
+                    Clique aqui para continuar seu curso de Educação Financeira.
                   </p>
                 </div>
               </div>
@@ -132,163 +98,37 @@
                   <div
                     class="d-flex align-items-center justify-content-between mb-1"
                   >
-                    <h6 class="mb-0">Jason Doe</h6>
-                    <small class="small font-weight-bold">14 Dec</small>
+                    <h6 class="mb-0">Libras</h6>
+                    <small class="small font-weight-bold">25 Nov</small>
                   </div>
                   <p class="font-italic text-muted mb-0 text-small">
-                    Lorem ipsum dolor sit amet, consectetur. incididunt ut
-                    labore.
+                    Clique aqui para continuar seu curso de Libras
                   </p>
                 </div>
               </div>
             </a>
 
-            <a
-              href="#"
-              class="list-group-item list-group-item-action list-group-item-light rounded-0"
-            >
-              <div class="media">
-                <img
-                  src="../../../assets/img/avatares/avatar3.jpg"
-                  alt="user"
-                  width="50"
-                  class="rounded-circle"
-                />
-                <div class="media-body ml-4">
-                  <div
-                    class="d-flex align-items-center justify-content-between mb-1"
-                  >
-                    <h6 class="mb-0">Jason Doe</h6>
-                    <small class="small font-weight-bold">14 Dec</small>
-                  </div>
-                  <p class="font-italic text-muted mb-0 text-small">
-                    Lorem ipsum dolor sit amet, consectetur. incididunt ut
-                    labore.
-                  </p>
-                </div>
-              </div>
-            </a>
-
-            <a
-              href="#"
-              class="list-group-item list-group-item-action list-group-item-light rounded-0"
-            >
-              <div class="media">
-                <img
-                  src="../../../assets/img/avatares/avatar1.jpg"
-                  alt="user"
-                  width="50"
-                  class="rounded-circle"
-                />
-                <div class="media-body ml-4">
-                  <div
-                    class="d-flex align-items-center justify-content-between mb-1"
-                  >
-                    <h6 class="mb-0">Jason Doe</h6>
-                    <small class="small font-weight-bold">14 Dec</small>
-                  </div>
-                  <p class="font-italic text-muted mb-0 text-small">
-                    Lorem ipsum dolor sit amet, consectetur. incididunt ut
-                    labore.
-                  </p>
-                </div>
-              </div>
-            </a>
-
-            <a
-              href="#"
-              class="list-group-item list-group-item-action list-group-item-light rounded-0"
-            >
-              <div class="media">
-                <img
-                  src="../../../assets/img/avatares/avatar6.jpg"
-                  alt="user"
-                  width="50"
-                  class="rounded-circle"
-                />
-                <div class="media-body ml-4">
-                  <div
-                    class="d-flex align-items-center justify-content-between mb-1"
-                  >
-                    <h6 class="mb-0">Jason Doe</h6>
-                    <small class="small font-weight-bold">14 Dec</small>
-                  </div>
-                  <p class="font-italic text-muted mb-0 text-small">
-                    Lorem ipsum dolor sit amet, consectetur. incididunt ut
-                    labore.
-                  </p>
-                </div>
-              </div>
-            </a>
-
-            <a
-              href="#"
-              class="list-group-item list-group-item-action list-group-item-light rounded-0"
-            >
-              <div class="media">
-                <img
-                  src="../../../assets/img/avatares/avatar1.jpg"
-                  alt="user"
-                  width="50"
-                  class="rounded-circle"
-                />
-                <div class="media-body ml-4">
-                  <div
-                    class="d-flex align-items-center justify-content-between mb-1"
-                  >
-                    <h6 class="mb-0">Jason Doe</h6>
-                    <small class="small font-weight-bold">9 Nov</small>
-                  </div>
-                  <p class="font-italic text-muted mb-0 text-small">
-                    consectetur adipisicing elit, sed do eiusmod tempor
-                    incididunt ut labore.
-                  </p>
-                </div>
-              </div>
-            </a>
-
-
-            <a
-              href="#"
-              class="list-group-item list-group-item-action list-group-item-light rounded-0"
-            >
-              <div class="media">
-                <img
-                  src="../../../assets/img/avatares/avatar7.jpg"
-                  alt="user"
-                  width="50"
-                  class="rounded-circle"
-                />
-                <div class="media-body ml-4">
-                  <div
-                    class="d-flex align-items-center justify-content-between mb-3"
-                  >
-                    <h6 class="mb-0">Jason Doe</h6>
-                    <small class="small font-weight-bold">21 Aug</small>
-                  </div>
-                  <p class="font-italic text-muted mb-0 text-small">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore.
-                  </p>
-                </div>
-              </div>
-            </a>
+            
           </div>
         </div>
-      </div>
     </div>
+
     <!-- Chat Box-->
     <div class="col-9">
+      <div class="row overflow-hidden">
+        <div
+          id="titulo-curso"
+          class="section-title-curso bg-gray py-2 bg-light"
+        >
+          <p class="h5 mb-0 py-1">Lógica de programação</p>
+        </div>
+      </div>
       <div id="chat-box" class="px-4 py-5 chat-box bg-white">
         <!-- Sender Message-->
-        <!-- <div [innerHtml]="data"></div> -->
 
-        <!-- <ng-content>
+        <div #entry></div>
 
-        </ng-content> -->
-
-        <msg-bot></msg-bot>
-
+        <!-- <msg-bot></msg-bot> -->
       </div>
 
       <!-- Typing area -->
@@ -296,13 +136,14 @@
         <div class="input-group">
           <input
             type="text"
-            placeholder="Type a message"
+            placeholder="Digite sua mensagem"
             aria-describedby="button-addon2"
             class="form-control rounded-0 border-0 py-4 bg-light"
+            disabled
           />
           <div class="input-group-append">
             <button id="button-addon2" type="submit" class="btn btn-link">
-              <i class="fa fa-paper-plane"></i>
+              <i class="bx bx-send"></i>
             </button>
           </div>
         </div>

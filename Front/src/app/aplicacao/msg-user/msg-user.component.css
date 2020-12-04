@@ -1,0 +1,16 @@
+.message{
+    background-color: #3E3E60;
+  }
+  .message p {
+    color: #fff !important;
+  }
+
+  .small{
+    margin-top: 1em;
+    margin-bottom: -0.2em;
+  }
+
+  .text-small{
+    margin-left: 1em;
+    margin-top: 0.5em;
+  }

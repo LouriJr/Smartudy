@@ -13,7 +13,7 @@ export class CursoComponent implements OnInit {
   @Input () curso: Curso;
   constructor() { 
     this.curso = new Curso();
-    this.curso.Alunos = 875;
+    this.curso.Alunos = 95;
     this.curso.Titulo = 'Lógica de programação';
     this.curso.Avaliacao = '9.6';
     this.curso.CargaHoraria = '8';

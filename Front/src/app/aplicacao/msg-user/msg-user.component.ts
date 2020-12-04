@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Questao } from 'src/model/questao.model';
+import { Resposta } from 'src/model/resposta.model';
 
 @Component({
   selector: 'msg-user',
@@ -8,7 +10,9 @@ import { Component, OnInit } from '@angular/core';
 export class MsgUserComponent implements OnInit {
 
   constructor() { }
-
+  @Input () resposta: Resposta;
+  @Input () id_questao: string;
+  
   ngOnInit(): void {
   }
 
